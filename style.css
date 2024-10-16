@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    background-color: #548687;
+    text-align: center;
+}
+.msg-contenier{
+   
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    background-color: bisque;
+    cursor: pointer;
+    color: rgb(146, 68, 68);
+    font-size: 3.9rem;
+}
+.box:hover{
+    background-color: antiquewhite;
+}
+
+
+.optionBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.new-game{
+    padding: 1rem;
+    background-color: rgb(250, 246, 246);
+    color: #000000;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.new-game:hover{
+    background-color: #efefef79;
+}
+.rest-game{
+    padding: 1rem;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.rest-game:hover{
+    background-color: rgba(0, 0, 0, 0.628);
+}
+
+.msg{
+    color: yellow;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.score-contenier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#userO{
+    padding: 1rem;
+    background-color: #B0C4DE;
+    position: absolute;
+    left: 15vmax;
+    top: 50%;
+    border-radius: 1rem;
+}
+#userX{
+    padding: 1rem;
+    background-color: #B0C4DE;
+    position: absolute;
+    right: 15vmax;
+    top: 50%;
+    border-radius: 1rem;
+}
+#scoreO{
+    padding: 1rem;
+    background-color: #afeeee93;
+    position: absolute;
+    left: 18vmax;
+    top: 40%;
+    border-radius: .8rem;
+}
+#scoreX{
+    padding: 1rem;
+    background-color: #afeeee93;
+    position: absolute;
+    right: 18vmax;
+    top: 40%;
+    border-radius: .8rem;
+}
+@media screen and (max-width: 569px) {
+    /* STYLES HERE */
+    .box{
+        height: 18vmin;
+        width: 18vmin;
+        border-radius: 1rem;
+        border: none;
+        background-color: bisque;
+        cursor: pointer;
+        color: rgb(146, 68, 68);
+        font-size: 1.9rem;
+    }
+    .msg-contenier{
+   
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .game{
+        height: 60vmin;
+        width: 60vmin;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vmin;
+    }
+    #userO{
+        padding: 1.5vmin;
+        background-color: #B0C4DE;
+        position: absolute;
+        left: 1vmax;
+        top: 50%;
+        border-radius: 1rem;
+        font-size: .9rem;
+    }
+    #userX{
+        padding: 1.5vmin;
+        background-color: #B0C4DE;
+        position: absolute;
+        right: 1vmax;
+        top: 50%;
+        border-radius: 1rem;
+        font-size: .9rem;
+    }
+    #scoreO{
+        padding: 1rem;
+        background-color: #afeeee93;
+        position: absolute;
+        left: 5vmax;
+        top: 40%;
+        border-radius: .8rem;
+    }
+    #scoreX{
+        padding: 1rem;
+        background-color: #afeeee93;
+        position: absolute;
+        right: 5vmax;
+        top: 40%;
+        border-radius: .8rem;
+    }
+}
+@media screen and (max-width: 380px){
+    #userO{
+        padding: 1.5vmin;
+        background-color: #B0C4DE;
+        position: absolute;
+        left: 1vmax;
+        top: 50%;
+        border-radius: 1rem;
+        font-size: .7rem;
+    }
+    #userX{
+        padding: 1vmin;
+        background-color: #B0C4DE;
+        position: absolute;
+        right: 1vmax;
+        top: 50%;
+        border-radius: 1rem;
+        font-size: .7rem;
+    }
+    #scoreO{
+        padding: .5rem;
+        background-color: #afeeee93;
+        position: absolute;
+        left: 3vmax;
+        font-size: 1rem;
+        top: 44%;
+        border-radius: .8rem;
+    }
+    #scoreX{
+        padding: .5rem;
+        background-color: #afeeee93;
+        position: absolute;
+        right: 3vmax;
+        font-size: 1rem;
+        top: 44%;
+        border-radius: .8rem;
+    }
+}
